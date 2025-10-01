@@ -357,6 +357,14 @@ footer i{
   color: #16254e;
 }
 footer i:hover{
-  color: #ec7348;
+  color: #ec9c3b;
+}
+
+.email{
+  cursor: pointer;
+}
+.email:hover{
+  color: #ec9c3b;
+
 }
 
