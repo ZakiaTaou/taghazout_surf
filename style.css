@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #16254e;
+}
+
+#top {
+  background-color: #e1f4fe;
+}
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+.main-navigation img {
+  width: 5rem;
+}
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+}
+.nav-menu a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #16254e;
+  transition: 0.2s;
+}
+.nav-menu a:hover {
+  color: rgb(0, 0, 0);
+  transform: translateY(-3px);
+}
+
+.hero-section {
+  background-image: url("imgs/backgound-hero.png"),
+    linear-gradient(to bottom, #e1f4fe, #ffffff);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* height: calc(100vh - 103px); */
+  display: flex;
+  justify-content: space-between;
+  background-color: #e1f4fe;
+  margin-bottom: 20px;
+}
+.hero-img {
+  width: 50%;
+  margin-top: 75px;
+}
+.hero-img img {
+  width: 100%;
+}
+.hero-content {
+  padding-left: 150px;
+}
+
+.hero-content h1 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 54px;
+  margin-left: 39px;
+}
+.hero-content h2 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 100px;
+  margin-left: 272px;
+}
+.last-letter {
+  position: absolute;
+}
+.hero-content button {
+  background-color: #ec9c3b;
+  border: none;
+  color: #16254e;
+  padding: 16px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-left: 245px;
+  transition-duration: 0.5s;
+}
+.hero-content button:hover {
+  background-color: #ec7348;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+.about-section {
+  text-align: center;
+  margin: 2rem auto;
+  width: 500px;
+  position: relative;
+}
+.about-section h2,
+.weather-section h2,
+.program-section h2,
+.location-section h2,
+.contact-section h2 {
+  font-size: 60px;
+}
+.about-section p {
+  color: rgb(143, 152, 175);
+}
+.about-section img {
+  width: 600px;
+  display: flex;
+  justify-self: center;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+.about-section span {
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 2px 2px 10px #000000;
+}
+
+.weather-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 2rem;
+  gap: 3rem;
+}
+
+.weather-info div {
+  width: 30%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+  box-shadow: 0 2px 15px #ec9c3b;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.weather-info div:hover{
+  box-shadow: 0 8px 15px #ec9c3b;
+
+}
+
+.weather-info span {
+  margin-top: 1rem;
+}
+.weather-section {
+  text-align: center;
+  margin: 0 auto;
+  width: 60vw;
+}
+.weather-section p {
+  color: rgb(143, 152, 175);
+  width: 500px;
+  margin: 0 auto;
+}
+.weather-info i {
+  font-size: 32px;
+  padding-top: 5px;
+}
+
+.program-section {
+  background-image: url("imgs/backgound-hero.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  /* margin-top: 2rem a; */
+}
+
+.program {
+  text-align: start;
+  margin: 2rem auto;
+  width: 700px;
+}
+.program span {
+  color: #8f98af;
+  font-size: 12px;
+}
+.program li {
+  list-style: none;
+  font-size: 13px;
+}
+
+.program-info img {
+  width: 100px;
+  height: 120px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+.program-info {
+  display: flex;
+  gap: 2rem;
+}
+
+.location-section {
+  text-align: center;
+  margin: 2rem auto;
+}
+.location-section p {
+  width: 700px;
+  margin: 0 auto;
+  color: #8f98af;
+}
+
+.location-info {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  gap: 3rem;
+}
+.location-info div {
+  width: 40%;
+  height: 300px;
+}
+.location-info span,
+.location-info ul {
+  text-align: left;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+iframe,
+#info {
+  box-shadow: 0 8px 16px rgba(236, 156, 59, 0.6);
+  border-radius: 15px;
+}
+#info ul {
+  font-size: 14px;
+  margin-left: 15px;
+  list-style: none;
+}
+#info span {
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 5px;
+}
+#info i {
+  color: #ec7348;
+}
+
+.contact-section {
+  text-align: center;
+  margin: 2rem auto;
+}
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 2rem;
+}
+.contact-info div {
+  width: 40%;
+  height: auto;
+}
+#contact-img {
+  display: flex;
+  justify-content: center;
+}
+#contact-img img {
+  width: 80%;
+}
+#contact-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  height: 60vh;
+  box-shadow: 0 2px 10px rgba(128, 198, 236, 0.9);
+  border-radius: 15px;
+
+}
+form {
+  position: relative;
+  margin-left: 15px;
+}
+#contact-form button {
+  position: absolute;
+  left: 68%;
+  background-color: #93d4f7;
+  border: none;
+  color: #ffffff;
+  padding: 4px 20px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 29px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 15px;
+  transition-duration: 0.5s;
+  
+}
+#contact-form div {
+  text-align: left;
+}
+textarea {
+  width: 348px;
+  height: 70px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  
+}
+input {
+  width: 348px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+input::placeholder{
+  font-family: monospace;
+}
+label{
+  font-size: 18px;
+  font-weight: 600;
+}
+#contact-form button:hover{
+  background-color: #2a98d3;
+  transform: translateY(-3px);
+}
+footer img{
+  width: 5rem;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  background-color: #e1f4fe;
+  align-items: center;
+  /* margin: 0 auto; */
+  
+}
+footer p{
+  font-size: 10px;
+  width: 300px;
+}
+footer i{
+  color: #16254e;
+}
+footer i:hover{
+  color: #ec7348;
+}
+

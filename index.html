@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taghazout Surf Beach</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header id="top">
+      <nav class="main-navigation">
+        <span>
+          <img src="imgs/logo.png" alt="logo pour taghazout beach surf" />
+        </span>
+        <span class="nav-menu">
+          <a href="#about">About</a>
+          <a href="#weather">Weather</a>
+          <a href="#program">Program</a>
+          <a href="#location">Location</a>
+          <a href="#contact">Contact</a>
+        </span>
+      </nav>
+    </header>
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <h1>Taghazout Surf</h1>
+        <h2>EXP<span class="last-letter">O</span></h2>
+        <button onclick="location.href='#program'" type="button">
+          Explore Program
+        </button>
+      </div>
+      <div class="hero-img">
+        <img src="imgs/hero-img1.png" alt="" srcset="" />
+      </div>
+    </section>
+    <section id="about" class="about-section">
+      <div>
+        <h2>About</h2>
+        <p>
+          Taghazout Surf Expo is a 3-day event celebrating surf culture in
+          Taghazout, Morocco — one of the country’s top surf destinations. The
+          event features surf competitions, gear exhibitions, beginner lessons,
+          local food, and live music. Join us for an unforgettable experience
+          combining waves, culture, and fun by the ocean!
+        </p>
+        <img src="imgs/about.jpg" alt="" srcset="" />
+        <span>Celebriting Surf</span>
+      </div>
+    </section>
+    <section id="weather" class="weather-section">
+      <h2>Weather</h2>
+      <p>
+        Check the live surf and weather conditions in Taghazout before you hit
+        the waves! Stay updated with the temperature, wind speed, and wave
+        height to plan your perfect surf session.
+      </p>
+      <div class="weather-info">
+        <div>
+          <i class="fa-solid fa-temperature-high"></i>
+          <h4>Temperature</h4>
+          <span id="temp"></span>
+        </div>
+        <div>
+          <i class="fa-solid fa-wind"></i>
+          <h4>Wind Speed</h4>
+          <span id="speed"></span>
+        </div>
+        <div>
+          <i class="fa-solid fa-water"></i>
+          <h4>Wave Height</h4>
+          <span id="height"></span>
+        </div>
+      </div>
+    </section>
+    <section id="program" class="program-section">
+      <div class="program">
+        <h2>Check Our Events</h2>
+        <hr />
+        <div>
+          <span><i class="fa-solid fa-calendar-days"></i>03 Oct, 2025</span>
+          <span><i class="fa-solid fa-location-dot"></i>Taghazout Beach</span>
+          <div class="program-info">
+            <div>
+              <img src="imgs/program1.jpg" alt="" />
+            </div>
+            <div>
+              <h3>Opening Day</h3>
+              <ul>
+                <li>Welcome & Regestration.</li>
+                <li>Surf Competitions Kickoff.</li>
+                <li>Surf Gear Exhibition.</li>
+                <li>Sunset Beach Party.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr />
+
+        <div>
+          <span><i class="fa-solid fa-calendar-days"></i> 04 Oct, 2025</span>
+          <span><i class="fa-solid fa-location-dot"></i>Taghazout Beach</span>
+          <div class="program-info">
+            <div>
+              <img src="imgs/program2.jpg" alt="" srcset="" />
+            </div>
+            <div>
+              <h3>Experience Day</h3>
+              <ul>
+                <li>Surf Lessons for Beginners.</li>
+                <li>Live Music & Food Stands.</li>
+                <li>Local Art & Culture Showcase.</li>
+                <li>Evening Surf Jam.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div>
+          <span><i class="fa-solid fa-calendar-days"></i>05 Oct, 2025</span>
+          <span><i class="fa-solid fa-location-dot"></i>Taghazout Beach</span>
+          <div class="program-info">
+            <div>
+              <img src="imgs/program3.jpg" alt="" srcset="" />
+            </div>
+            <div>
+              <h3>Finals & Closing</h3>
+              <ul>
+                <li>Surf Competition Finals.</li>
+                <li>Award Ceremony.</li>
+                <li>Closing Celebration.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <i class="fa-solid fa-calendar-days"></i>
+      <i class="fa-solid fa-location-dot"></i> -->
+    </section>
+    <section id="location" class="location-section">
+      <h2>🏖️ Où nous trouver ?</h2>
+      <p>
+        Le Taghazout Surf Expo se déroule sur la magnifique plage de Taghazout,
+        un village côtier emblématique du Maroc situé à seulement 20 km au nord
+        d’Agadir.
+      </p>
+      <div class="location-info">
+        <div id="info">
+          <span><i class="fa-solid fa-circle-info"></i> Infos pratiques :</span>
+          <ul>
+            <li>📍 Adresse : Taghazout Beach, Agadir, Maroc</li>
+            <li>🚗 Accès : À 30 minutes en voiture depuis Agadir</li>
+            <li>🅿️ Parking : Disponible à proximité</li>
+            <li>
+              🏨 Hébergements : Nombreux hôtels et surf camps autour de la plage
+            </li>
+          </ul>
+        </div>
+        <div id="loc">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22782.059749293614!2d-9.715571277325651!3d30.551968181924476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb24d4538db0173%3A0x3d5bf22fe7d11aca!2sTaghazout!5e0!3m2!1sfr!2sma!4v1759313201617!5m2!1sfr!2sma"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <div id="contact-form">
+          <form action="">
+            <div>
+              <label for="nomEtudiant">Email :</label>
+              <input type="email" id="email" placeholder="Enter your email" />
+            </div>
+            <div>
+              <label for="email">Message :</label>
+              <textarea placeholder="Enter your Message" required></textarea>
+            </div>
+            <button type="submit">Contact</button>
+          </form>
+        </div>
+        <div id="contact-img">
+          <img src="imgs/contact.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <span><img src="imgs/logo.png" alt="" srcset="" /></span>
+      <span>
+        <h6>About</h6>
+        <p>
+          day surf festival in Taghazout with competitions, lessons,
+          exhibitions, local food & live music by the ocean.
+        </p>
+      </span>
+      <span>
+        <h6>Contact</h6>
+        <p>surfingexpo@taghazout.com</p>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        
+      </span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
