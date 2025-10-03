@@ -30,8 +30,10 @@
           <a href="#location">Location</a>
           <a href="#contact">Contact</a>
         </span>
+      <span id="bar" class="active"><i class="fa-solid fa-bars"></i></span>
       </nav>
     </header>
+
     <section id="hero" class="hero-section">
       <div class="hero-content">
         <h1>Taghazout Surf</h1>
@@ -44,6 +46,7 @@
         <img src="imgs/hero-img1.png" alt="" srcset="" />
       </div>
     </section>
+
     <section id="about" class="about-section">
       <div>
         <h2>About</h2>
@@ -58,6 +61,7 @@
         <span>Celebriting Surf</span>
       </div>
     </section>
+
     <section id="weather" class="weather-section">
       <h2>Weather</h2>
       <p>
@@ -83,9 +87,10 @@
         </div>
       </div>
     </section>
+
     <section id="program" class="program-section">
       <div class="program">
-        <h2>Check Our Events</h2>
+        <h2>Check Our Program</h2>
         <hr />
         <div>
           <span><i class="fa-solid fa-calendar-days"></i>03 Oct, 2025</span>
@@ -94,7 +99,7 @@
             <div>
               <img src="imgs/program1.jpg" alt="" />
             </div>
-            <div>
+            <div class="detail-pro">
               <h3>Opening Day</h3>
               <ul>
                 <li>Welcome & Regestration.</li>
@@ -114,7 +119,7 @@
             <div>
               <img src="imgs/program2.jpg" alt="" srcset="" />
             </div>
-            <div>
+            <div class="detail-pro">
               <h3>Experience Day</h3>
               <ul>
                 <li>Surf Lessons for Beginners.</li>
@@ -131,9 +136,9 @@
           <span><i class="fa-solid fa-location-dot"></i>Taghazout Beach</span>
           <div class="program-info">
             <div>
-              <img src="imgs/program3.jpg" alt="" srcset="" />
+              <img src="imgs/program3mobile.jpg" alt="" srcset="" />
             </div>
-            <div>
+            <div class="detail-pro">
               <h3>Finals & Closing</h3>
               <ul>
                 <li>Surf Competition Finals.</li>
@@ -148,22 +153,26 @@
       <!-- <i class="fa-solid fa-calendar-days"></i>
       <i class="fa-solid fa-location-dot"></i> -->
     </section>
+
     <section id="location" class="location-section">
-      <h2>🏖️ Où nous trouver ?</h2>
+      <h2>🏖️ Where to find us ?</h2>
       <p>
-        Le Taghazout Surf Expo se déroule sur la magnifique plage de Taghazout,
-        un village côtier emblématique du Maroc situé à seulement 20 km au nord
-        d’Agadir.
+        The Taghazout Surf Expo takes place on the magnificent beach of
+        Taghazout, an emblematic coastal village of Morocco located just 20 km
+        north of Agadir.
       </p>
       <div class="location-info">
         <div id="info">
-          <span><i class="fa-solid fa-circle-info"></i> Infos pratiques :</span>
+          <span
+            ><i class="fa-solid fa-circle-info"></i> Practical information
+            :</span
+          >
           <ul>
-            <li>📍 Adresse : Taghazout Beach, Agadir, Maroc</li>
-            <li>🚗 Accès : À 30 minutes en voiture depuis Agadir</li>
-            <li>🅿️ Parking : Disponible à proximité</li>
+            <li>📍 Address: Taghazout Beach, Agadir, Morocco</li>
+            <li>🚗 Access: 30 minutes by car from Agadir</li>
+            <li>🅿️ Parking: Available nearby</li>
             <li>
-              🏨 Hébergements : Nombreux hôtels et surf camps autour de la plage
+              🏨 Accommodation: Many hotels and surf camps around the beach
             </li>
           </ul>
         </div>
@@ -180,36 +189,36 @@
         </div>
       </div>
     </section>
+
     <section id="contact" class="contact-section">
       <h2>Contact Us</h2>
       <div class="contact-info">
+        <div id="contact-img">
+          <img src="imgs/contact.png" alt="" />
+        </div>
         <div id="contact-form">
-          <form action="">
+          <form action="" id="form">
             <div>
               <label for="nomEtudiant">Email :</label>
               <input type="email" id="email" placeholder="Enter your email" />
             </div>
             <div>
               <label for="email">Message :</label>
-              <textarea placeholder="Enter your Message" required></textarea>
+              <textarea
+                id="message"
+                placeholder="Enter your Message"
+                required
+              ></textarea>
             </div>
             <button type="submit">Contact</button>
           </form>
         </div>
-        <div id="contact-img">
-          <img src="imgs/contact.png" alt="" />
-        </div>
       </div>
     </section>
+
     <footer>
       <span><img src="imgs/logo.png" alt="" srcset="" /></span>
-      <span>
-        <h6>About</h6>
-        <p>
-          day surf festival in Taghazout with competitions, lessons,
-          exhibitions, local food & live music by the ocean.
-        </p>
-      </span>
+      
       <span>
         <h6>Contact</h6>
         <p class="email">surfingexpo@taghazout.com</p>
@@ -221,6 +230,7 @@
         <p>Copyright &copy; 2025 MyWebsite. All rights reserved.</p>
       </span>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
