@@ -48,6 +48,8 @@ body {
   justify-content: space-between;
   background-color: #e1f4fe;
   margin-bottom: 20px;
+  position: relative;
+
 }
 .hero-img {
   width: 50%;
@@ -371,7 +373,7 @@ textarea:hover {
   display: none;
   font-size: 2rem;
 }
-@media (max-width: 600px) {
+@media (max-width:850px) {
   .main-navigation {
     position: relative;
     padding: 1rem;
@@ -382,25 +384,24 @@ textarea:hover {
     cursor: pointer;
 
   }
-  .toggle-button {
+  .nav-menu{
     width: 100vw;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     position: absolute;
     top: 80%;
-    background-color: aliceblue;
+    background-color: #e1f4fe;
+    background-image: linear-gradient(to bottom, #e1f4fe, #eff9fe);
     left: -20px;
     padding: 1.26rem;
     z-index: 1;
+
   }
-  .nav-menu {
-    display: none;
+  .nav-menu.active{
+    display: flex;
   }
-.nav-dis{
-  display: flex;
-  
-}
+
   .hero-section {
     flex-direction: column;
     align-items: center;

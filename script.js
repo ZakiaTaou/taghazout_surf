@@ -32,16 +32,26 @@ form.addEventListener("submit", (e) => {
   alert("Message envoyé ! Merci de nous contacter ");
   form.reset();
 });
+
+
+
 const bar = document.getElementById("bar");
 const navMenu = document.querySelector(".nav-menu");
-const togglebtn = document.getElementById('bar');
-togglebtn.addEventListener('click',()=>{
-  navMenu.classList.toggle("nav-dis")
-  navMenu.classList.toggle("toggle-button")
-})
+bar.addEventListener("click", (e) => {
+  navMenu.classList.toggle("active");
+});
+
+
 document.addEventListener("click",(e)=>{
   if(!bar.contains(e.target) && !navMenu.contains(e.target)){
-    navMenu.classList.remove("nav-dis")
-    navMenu.classList.remove("toggle-button")
+    navMenu.classList.remove("active")
   }
+});
+
+
+navMenu.querySelectorAll("a").forEach((link) =>{
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("active")
+  });
+
 })
