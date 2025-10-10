@@ -7,9 +7,6 @@ async function getWeather() {
     const response = await fetch(
       "https://api.openweathermap.org/data/2.5/weather?q=Taghazout&appid=25630b928508461462077f55c0095942&units=metric&lang=fr"
     );
-    if (!response.ok) {
-      throw new Error(`Error : ${response.status}`);
-    }
     const data = await response.json();
     temp.textContent = data.main.temp + " °C";
     speed.textContent = data.wind.speed + " m/s";
